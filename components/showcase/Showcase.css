@@ -1,0 +1,116 @@
+/* Showcase General Styling */
+.Showcase {
+  display: block;
+  width: 100%;
+  background-color: var(--black_tone);
+}
+@media screen and (max-width: 800px) {
+  .Showcase {
+    display: none;
+  }
+}
+
+.Showcase_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0 2rem 0;
+}
+
+.showcase_content {
+  flex-grow: 1;
+}
+
+.showcase_footer {
+  width: 100%;
+}
+
+.showcase_footer_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Title and Subtitle Styling */
+.showcase_title_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Title Wrapper */
+.title_wrapper {
+  display: flex;
+}
+
+.Showcase_main_title {
+  font-family: var(--font-sf-pro), sans-serif;
+  font-size: clamp(2rem, 10vw, 8rem);
+  line-height: clamp(2rem, 10vw, 6.5rem);
+  font-weight: 600;
+  color: var(--white_tone);
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.showcase_secondary_title {
+  font-family: var(--font-sf-pro), sans-serif;
+  font-size: clamp(2rem, 10vw, 8rem);
+  line-height: clamp(2rem, 10vw, 6.5rem);
+  font-weight: 600;
+  color: var(--primary_tone);
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Name Title */
+.Showcase_name_title {
+  font-size: 1.65rem;
+  color: var(--white_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.Showcase_name_title > span {
+  font-size: 1.65rem;
+  color: var(--grey_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 500;
+}
+
+/* Hero Image */
+.hero_image {
+  background-color: #707070;
+  position: absolute;
+}

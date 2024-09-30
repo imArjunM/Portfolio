@@ -1,0 +1,82 @@
+/* General container and layout styles */
+.About_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page__headline {
+  width: 100%;
+}
+
+.About_main_content {
+  width: 100%;
+}
+
+.About__grid_layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
+  padding-top: 3rem;
+}
+
+.About__stack_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+/* Image styles */
+.About__profile_info_image {
+  width: 100%;
+  height: auto;
+  min-height: 36rem;
+  object-fit: cover;
+  background-color: #707070;
+}
+
+/* Typography styles */
+.page_title {
+  font-size: 1.125rem;
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 400;
+  color: var(--gray_tone);
+}
+
+.About_main_content_title {
+  font-size: clamp(1.5rem, 3vw + 1rem, 3.125rem);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--black_tone);
+}
+
+.About_support_content_title {
+  font-size: 1.45rem;
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 1.75;
+  color: #3c3d3e;
+}
+
+/* Responsive design */
+@media screen and (max-width: 960px) {
+  .About__grid_layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  .About__profile_info_image {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .About__profile_info_image {
+    height: 20rem;
+  }
+}

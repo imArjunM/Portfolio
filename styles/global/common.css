@@ -1,0 +1,65 @@
+html {
+  font-family: var(--font-sf-pro), sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page_container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .page_container {
+    max-width: 1120px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .page_container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .page_container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page_container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .page_container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page_container {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page_container {
+    max-width: 100%;
+  }
+}
+
+/* Spacing */
+.section_space {
+  padding: var(--space) 0;
+}
+
+.visually-hidden {
+  display: none;
+}

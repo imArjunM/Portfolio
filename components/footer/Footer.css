@@ -1,0 +1,83 @@
+/* Footer Base Styles */
+.Footer {
+  background-color: var(--black_tone);
+}
+
+/* Footer Titles */
+.Footer__title {
+  font-size: clamp(1.5rem, 3vw + 1rem, 3.125rem);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--white_tone);
+}
+
+/* Avatar Styling */
+.Footer__avatar,
+.Footer__mobile_avatar {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/* Desktop Avatar */
+.Footer__avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+/* Mobile Avatar */
+.Footer__mobile_avatar {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* Inner Title Space for Alignment */
+.Footer__inner_title_space {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Footer Content Flexbox */
+.Footer__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Button Styling */
+.btn {
+  font-size: 1rem;
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 400;
+  color: var(--black_tone);
+  background-color: var(--white_tone);
+  padding: 1rem 2.5rem;
+  border-radius: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_primary {
+  transition: background-color 0.3s ease;
+}
+
+.btn_primary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 640px) {
+  .Footer__avatar {
+    display: none;
+  }
+
+  .Footer__mobile_avatar {
+    display: block;
+  }
+}

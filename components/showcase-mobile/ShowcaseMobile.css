@@ -1,0 +1,106 @@
+/* Showcase Mobile General Styling */
+.ShowcaseMobile {
+  display: none;
+  width: 100%;
+  padding: 2rem 0 1.25rem 0;
+  background-color: var(--black_tone);
+}
+
+@media screen and (max-width: 800px) {
+  .ShowcaseMobile {
+    display: block;
+  }
+}
+
+.ShowcaseMobile_container {
+  width: 100%;
+  height: calc(100vh - 3.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Showcase Title and Subtitle */
+.ShowcaseMobile_main_title {
+  font-size: 3rem;
+  color: var(--white_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 600;
+}
+
+.ShowcaseMobile_tone_title {
+  font-size: 3rem;
+  color: var(--primary_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 600;
+}
+
+.ShowcaseMobile_subtitle {
+  font-size: 1rem;
+  color: var(--white_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-left: 2.75rem;
+  margin-top: 0.75rem;
+  position: relative;
+}
+
+.ShowcaseMobile_subtitle::before {
+  content: '';
+  width: 1.75rem;
+  height: 2px;
+  background-color: var(--white_tone);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Showcase Banner and Content */
+.showcaseMobile_banner_image {
+  width: 100%;
+  background-color: #707070;
+}
+
+.ShowcaseMobile_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Profile Information */
+
+.profile_info {
+  margin-top: 2rem;
+}
+
+.profile_info_group {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.profile_info_name {
+  font-size: 2rem;
+  color: var(--white_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 700;
+}
+
+.profile_info_second_name {
+  font-size: 1.5rem;
+  color: var(--grey_tone);
+  font-family: var(--font-sf-pro), sans-serif;
+  font-weight: 500;
+}
+
+.showcaseMobile_profile {
+  position: relative;
+}
+
+.ShowcaseMobile_scroll {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+}

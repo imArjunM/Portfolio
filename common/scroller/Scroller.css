@@ -1,0 +1,52 @@
+/* Scroll Container */
+.scroll_container {
+  position: relative;
+  height: 6.5rem;
+  width: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll Banner */
+.scroll_banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scroll_banner_image {
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: contain;
+}
+
+/* Scroller */
+.scroller {
+  width: 1.75rem;
+  height: 2.75rem;
+  border-radius: 1.5rem;
+  border: 3px solid var(--white_tone);
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+/* Scroll Dot */
+.scroll_dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--white_tone);
+  transform: translateY(1rem);
+}
+
+/* Scroll Space */
+.scroll_space {
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+}

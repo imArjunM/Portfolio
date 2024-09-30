@@ -1,0 +1,8 @@
+:root {
+  --primary_tone: #ff6c37;
+  --white_tone: #fafafa;
+  --black_tone: #121212;
+  --grey_tone: rgba(255, 255, 255, 0.5);
+
+  --space: 6rem;
+}
