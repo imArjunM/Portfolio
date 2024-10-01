@@ -27,7 +27,7 @@ export default function About() {
               <section className='About__more_contents'>
                 <h3 className='About_support_content_title'>
                   Over the years, I have spent time converting designs into
-                  pixel-perfect, performant, and responsive applications and
+                  pixel perfect, performant, and responsive applications and
                   websites. With mastery in CSS, I am able to create any design
                   with ease. I always focus on excellence.
                 </h3>

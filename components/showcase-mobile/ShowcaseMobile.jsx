@@ -50,30 +50,28 @@ export default function ShowcaseMobile() {
                 <p className='ShowcaseMobile_subtitle'>UI/UX DESIGN CAPABLE</p>
               </div>
             </header>
+          </article>
+          <section className='showcaseMobile_profile'>
+            <figure
+              className='showcaseMobile_banner_image'
+              aria-label='Profile Banner Image'
+            ></figure>
 
-            <section className='showcaseMobile_profile' ref={imageRef}>
-              <figure
-                className='showcaseMobile_banner_image'
-                aria-label='Profile Banner Image'
-                style={{ height: distance * 0.8 }}
-              ></figure>
-
-              <section className='showcaseMobile_profile_info'>
-                <div className='profile_info'>
-                  <div className='profile_info_group'>
-                    <h1 className='profile_info_name'>ARJUN</h1>
-                    <h1 className='profile_info_second_name'>MUTHUSAMY</h1>
-                  </div>
+            <section className='showcaseMobile_profile_info'>
+              <div className='profile_info'>
+                <div className='profile_info_group'>
+                  <h1 className='profile_info_name'>ARJUN</h1>
+                  <h1 className='profile_info_second_name'>MUTHUSAMY</h1>
                 </div>
-              </section>
-
-              <div className='ShowcaseMobile_scroll'>
-                <Scroller />
               </div>
             </section>
-          </article>
 
-          <footer className='ShowcaseMobile_social_links' ref={socialRef}>
+            <div className='ShowcaseMobile_scroll'>
+              <Scroller />
+            </div>
+          </section>
+
+          <footer className='ShowcaseMobile_social_links'>
             <nav aria-label='Social media links'>
               <SocialLinks screen='mobile' />
             </nav>

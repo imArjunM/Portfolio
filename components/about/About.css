@@ -41,14 +41,14 @@
   font-size: 1.125rem;
   font-family: var(--font-sf-pro), sans-serif;
   font-weight: 400;
-  color: var(--gray_tone);
+  color: var(--primary_tone);
 }
 
 .About_main_content_title {
   font-size: clamp(1.5rem, 3vw + 1rem, 3.125rem);
   font-family: var(--font-sf-pro), sans-serif;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.375;
   color: var(--black_tone);
 }
 
@@ -78,5 +78,14 @@
 @media screen and (max-width: 640px) {
   .About__profile_info_image {
     height: 20rem;
+  }
+  .About_support_content_title {
+    font-size: 1.35rem;
+
+    line-height: 1.85;
+  }
+
+  .About_main_content_title {
+    line-height: 1.5;
   }
 }

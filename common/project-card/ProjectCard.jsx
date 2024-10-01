@@ -16,10 +16,10 @@ export default function ProjectCard({ title, technologies, year }) {
         <section className='ProjectCard__description'>
           <ul className='Stack__content_list'>
             {technologies.map((tech, index) => (
-              <li key={index} className='Stack__technology_fs'>
-                {tech}
+              <li key={index} className='Stack__technology_item'>
+                <p className='Stack__technology_fs'>{tech}</p>
                 {index < technologies.length - 1 && (
-                  <span className='Stack__dot'></span>
+                  <div className='Stack__dot' aria-hidden='true'></div>
                 )}
               </li>
             ))}
