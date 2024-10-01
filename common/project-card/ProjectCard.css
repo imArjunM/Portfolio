@@ -48,43 +48,6 @@
   line-height: 1.35;
 }
 
-/* Stack Technologies List */
-.Stack__content_list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.Stack__technology_fs {
-  font-size: 0.875rem;
-  font-family: var(--font-sf-pro), sans-serif;
-  font-weight: 300;
-  color: #3c3d3e;
-}
-
-.Stack__dot {
-  margin-left: 0.5rem;
-  width: 0.35rem;
-  height: 0.35rem;
-  border-radius: 50%;
-  background-color: #9b9c9c;
-}
-
-/* Mobile Adjustments */
-@media screen and (max-width: 640px) {
-  .ProjectCard__banner {
-    height: 18rem;
-  }
-
-  .ProjectCard__headline_fs {
-    font-size: 1.25rem;
-  }
-
-  .ProjectCard__date_fs {
-    font-size: 0.75rem;
-  }
-
-  .Stack__content_list {
-    gap: 0.5rem;
-  }
+.ProjectCard__date_fs {
+  font-size: 0.75rem;
 }

@@ -1,8 +1,12 @@
+:root {
+  --scroll_size: 6.5rem;
+}
+
 /* Scroll Container */
 .scroll_container {
   position: relative;
-  height: 6.5rem;
-  width: 6.5rem;
+  height: var(--scroll_size);
+  width: var(--scroll_size);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +23,8 @@
 }
 
 .scroll_banner_image {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: var(--scroll_size);
+  height: var(--scroll_size);
   object-fit: contain;
 }
 
@@ -49,4 +53,28 @@
   position: absolute;
   left: 2rem;
   bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --scroll_size: 5.5rem;
+  }
+  .scroller {
+    width: 1.5rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--white_tone);
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem;
+  }
+
+  /* Scroll Dot */
+  .scroll_dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: var(--white_tone);
+    transform: translateY(1rem);
+  }
 }
